@@ -1,7 +1,7 @@
 # Ploblem : [피보나치 수 5] https://www.acmicpc.net/problem/10870
 
 # Solver : Sieun Park
-# Solved Date : 2021.03.01
+# Solved Date : 2021.03.01 
 # BigO: O(2^n)
 
 def fibonacci_1(n):
