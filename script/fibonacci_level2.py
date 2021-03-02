@@ -1,7 +1,7 @@
 # Ploblem : [피보나치 수 4] https://www.acmicpc.net/problem/10826
 
 # Solver : Sieun Park
-# Solved Date : 2020.03.02
+# Solved Date : 2021.03.02
 # BigO: O(n)
 
 
