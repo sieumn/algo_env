@@ -1,7 +1,7 @@
 # Ploblem : [하노이 탑 이동 순서] https://www.acmicpc.net/problem/11729
 
-# Solver : 
-# Solved Date : 
+# Solver : Sieun Park
+# Solved Date : 2021.03.09
 # BigO: 
 
 # Feel free to use.
@@ -20,13 +20,17 @@ def trans_pos (pos):
         return 3
     return 0 # Error!
 
-
 # Feel free to change anything.
 def hanoi(f, t, n):
     global count
-    count += 1
-    return [[f, t]]
+    if n==1:
+        count+=1
+        return [[f, t]]
+    else:
+        return hanoi(f, nor(f,t), n-1) + hanoi(f, t, 1) + hanoi(nor(f,t), t, n-1)
 
+def nor(a,b):
+    return 0b111 ^ (a | b)
 
 if __name__ == '__main__':
     n = int(input())
