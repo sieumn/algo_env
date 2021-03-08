@@ -2,7 +2,7 @@
 
 # Solver : Sieun Park
 # Solved Date : 2021.03.09
-# BigO: 
+# BigO: O(3^n)
 
 # Feel free to use.
 pos_1 = 0b100
