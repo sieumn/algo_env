@@ -1,8 +1,8 @@
 // Ploblem: [평균은 넘겠지] https://www.acmicpc.net/problem/4344
 
-// Solver: 
-// Solved Date: 
-// BigO:
+// Solver: Sieun Park
+// Solved Date: 2021.03.16
+// BigO: O(n)
 
 #include <iostream>
 #include <vector>
@@ -10,7 +10,12 @@
 using namespace std;
 
 float solution(int N, vector<int> seq){
-    return 0;
+    int count = 0, sum = 0;
+    for(int i=0; i < N; i++) sum += seq[i];
+    for(int i=0; i < N; i++){
+        if(seq[i] > (float)sum/N) count++;
+    }
+    return (float)count/N*100;
 }
 
 int main(){
@@ -28,7 +33,7 @@ int main(){
             seq.push_back(cur_e);
         }
 
-        printf("%.3lf %% \n", solution(N, seq));
+        printf("%.3lf%% \n", solution(N, seq));
     }
     return 0;
 }
