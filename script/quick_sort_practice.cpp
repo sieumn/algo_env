@@ -28,7 +28,7 @@ int random_partition(vector<int> &arr, int front, int rear){
 
     int left = front-1;
     for(int i = front; i < rear; i++){
-        if((arr[i]<arr[rear]) && i > left){
+        if(arr[i]<arr[rear]){
             swap(&arr[i], &arr[left+1]);
             left++;
         }
