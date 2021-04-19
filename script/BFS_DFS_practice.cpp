@@ -1,5 +1,8 @@
 //Problem: [DFS와 BFS] https://www.acmicpc.net/problem/1260
 
+// Solver: Sieun Park
+// Solved Date: 2021.04.20
+
 #include<iostream>
 #include<vector>
 #include<queue>
