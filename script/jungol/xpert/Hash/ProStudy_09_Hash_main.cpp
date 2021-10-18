@@ -1,5 +1,5 @@
 /**************************************************************
-    Problem: 3123
+    Problem: 3123 (바이러스/백신)
     User: sieunss.park
     Language: C++
     Result: Success
